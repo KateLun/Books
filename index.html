@@ -7,13 +7,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500;600;700;800;900&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <main class="basis">
-            <h1 class="title">Книжная полка</h1>
+        <main>
+            <div id="backgroung-main">
+                <div id="backgroung-main_color">
+                    <div class="basis">
+                        <div class="title-flex">
+
+                            <div class="about_books">
+                                <h1 class="title">Favorite books</h1>
+                                <p class="quotation">"Чтение меняет твою жизнь. Чтение открывает миры неизвестные или забытые,
+                                    отправляя путешественников по всему миру и сквозь время..."</p>
+                                <p class="quotation quotation_autor">Доналин Миллер</p>
+                            </div>
+                            
+                            <div class="button-add_blok">
+                                <div class="div_buttonBook">
+                                    <button class="button_add button" onclick="addBook()">Добавить книгу</button>
+                                </div>
+                                <div class="div_buttonBook inputs_book" id="container_addBook">
+                                    <input id="title" type="text" class="input" placeholder="Название книги" />
+                                    <input id="authors" type="text" class="input" placeholder="Автор книги" />
+                                    <input id="year" type="number"class="input"  placeholder="Год издания книги" />
+                                    <input id="image" type="text" class="input" placeholder="Ссылка на изображение" />
+                                    <button type="sumbit" class="button_add button" onclick="saveBook()">Сохранить</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div class="basis">
                 <div id="container" class="container"></div>
+            </div>
+            
         </main>
 
         
