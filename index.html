@@ -27,17 +27,29 @@
                                 <p class="quotation quotation_autor">Доналин Миллер</p>
                             </div>
                             
+                            
                             <div class="button-add_blok">
+
                                 <div class="div_buttonBook">
-                                    <button class="button_add button" onclick="addBook()">Добавить книгу</button>
+                                    <button class="button_add button" id="open-modal-button">Добавить книгу</button>
                                 </div>
-                                <div class="div_buttonBook inputs_book" id="container_addBook">
-                                    <input id="title" type="text" class="input" placeholder="Название книги" />
-                                    <input id="authors" type="text" class="input" placeholder="Автор книги" />
-                                    <input id="year" type="number"class="input"  placeholder="Год издания книги" />
-                                    <input id="image" type="text" class="input" placeholder="Ссылка на изображение" />
-                                    <button type="sumbit" class="button_add button" onclick="saveBook()">Сохранить</button>
+
+                                        
+                                <div class="add_modal" id="add-modal">
+                                    <div class="div_buttonBook inputs_book" id="container_addBook">
+                                        <div class="add_modal_content">
+                                            <button type="sumbit" class="button-close button"  id="close-modal-button">
+                                                <img src="icon_close.png" class="icon-close">
+                                            </button>
+                                            <input id="title" type="text" class="input" placeholder="Название книги" />
+                                            <input id="authors" type="text" class="input" placeholder="Автор книги" />
+                                            <input id="year" type="number"class="input"  placeholder="Год издания книги" />
+                                            <input id="image" type="text" class="input" placeholder="Ссылка на изображение" />
+                                            <button type="sumbit" class="button_add button"  id="save-book-button">Сохранить</button>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
 
                         </div>
