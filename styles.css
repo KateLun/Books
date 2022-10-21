@@ -163,13 +163,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: nowrap;
     border-top: 1px solid rgb(219, 217, 217);
 }
 .button-div{
     width: 50%;
-    margin: 10%;
+    padding: 10%;
 }
 .button_book{
     background: none;
